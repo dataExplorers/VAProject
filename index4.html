@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Tableau to Javascript </title>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="sketch4.js"></script>
+    
+    <script src="https://use.fontawesome.com/fa7ea488b3.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/gif" href="favicon.ico"
+</head>
+<body>
+  <div class="introduction">
+    <div id="text">
+      <h1 id="main">Disease Impact on Continent</h1>
+      <nav style="float: right; padding-right: 10px;">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <a href="index.html" >Home</a>
+      </nav>
+      <p id="disclaimer"> The following visualisation will show the impact of disease across the Continents. We can select a specific disease from the drop down.</p>
+       </div>
+  </div>
+</body>
+
+<body onload="initViz();">
+    <div id="tableauviz"></div>
+</body>
+</html>
