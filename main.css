@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap');
+
+#topbar{
+  padding-left: 12.5em;
+  padding-right: 13.5em;
+}
+
+h1#main {
+  width: 100%;
+  text-align: center;
+  background-color: #ff7f50;
+  color: white;
+
+}
+
+.my-caption{
+	right: 0 !important;
+    left: 0!important;
+    padding-bottom: 0!important;
+    bottom: 0!important;
+}
+.btn-view {
+	background-color: #ff7f50;
+    border-color: #ff7f50;
+	padding: 5px 15px;
+	font-size: 14px;
+
+}
+.btn-view:hover {
+	background-color: #fff;
+    border-color: #fff;
+	color: #000;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  font-family: 'Open Sans', sans-serif;
+}

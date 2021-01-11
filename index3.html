@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Tableau to Javascript </title>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="https://use.fontawesome.com/fa7ea488b3.js"></script>
+    <script src="sketch3.js"></script>
+
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+    />
+    <style>
+      table {
+        font: 10px sans-serif;
+      }
+      td,th {
+        border: 1px black solid;
+        padding: 5px;
+        width: 200px;
+      }
+      .ul1 {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+      }
+
+      .header {
+        padding: 15px;
+        text-align: center;
+        background-color: transparent;
+        color: #2F4F4F;
+      }
+      .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      .bg-2 {
+        background-color: #4682B4;
+        color: #ffffff;
+      }
+      .footer {
+        padding: 20px;
+        text-align: justify-all;
+        background: #535b6d;
+        color: white;
+        font-size: 20px;
+      }
+
+      .mydivclass {overflow-x: hidden; overflow-y: auto; padding: 20px;}
+
+    </style>
+    <title>Death rate per Age Group</title>
+  </head>
+  <div class="header">
+    <h1> Impact of Mortality rate on Different Age Groups </h1>
+  </div>
+  <body >
+    <nav style="float: right; padding-right: 10px;">
+      <i class="fa fa-home" aria-hidden="true"></i>
+      <a href="index.html" style="color:white;" >Home</a>
+    </nav>
+  <div class="container-fluid bg-2 text-center">
+    <h4 style="color:#ffcc00">About</h4>
+    <a> The age at which people die has changed significantly since 1990. Fewer people die at a young age. In 1990 nearly one-quarter of all deaths were in children younger than 5. In 2017, this had declined to just under 10%. In contrast, the share of deaths in the over-70s age bracket has increased from a third to half of all deaths over this period.</a>
+    <a> We would like to demonsrate how mortality rate relates between Age Group and Geographical context </a>
+    <br>
+
+    <h4 style="color:#ffcc00">Impact of Mortality Rate</h4>
+    <a> Each country has a mortality rate trend, which has changed over the time period of 27 years. And the recent trend of the past 5 years will definitely help the user to understand which disease out of the following is impacting the most and specifically which age group is under concern due to it!</a>
+    <br>
+
+    <h4 style="color:#ffcc00">How to Use the Visualisation?</h4>
+    <ul>
+        <li><dir="ltr">Select country that you would like to investigate</dir></li>
+        <li><dir="ltr">Select the disease to see the respective mortality rate</dir></li>
+        <li><dir="ltr">Select a specific year interval that you are interested in</dir></li>
+        <li><dir="ltr">Select an age groups that you want to visualize</dir></li>
+    </ul>
+  </div>
+  </body>
+</head>
+<body onload="initViz();">
+    <div id="tableauviz"></div>
+</body>
+</html>

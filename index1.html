@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Delving into Fatality</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <!-- <script src="../p5.js"></script> -->
+  <!-- <script src="../addons/p5.sound.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mappa-mundi@0.0.4"></script>
+
+  <script src="https://use.fontawesome.com/fa7ea488b3.js"></script>
+
+
+	<!-- <script src="sketch.js"></script> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/gif" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <div id="topbar">
+    <h1 id="main">Determinants of Death</h1>
+  </div>
+  <div class="introduction">
+    <div id="text">
+      <nav style="float: right; padding-right: 10px;">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <a href="index.html" >Home</a>
+      </nav>
+      <p id="disclaimer"><b>Disclaimer: </b> We are novices, so sorry for the non-solid UI.</p>
+
+
+
+    </div>
+  </div>
+
+<table>
+  <section >
+    <p id="disclaimer">Our Approach</p>
+    <p id="approach">By virtue of the map displayed below we attempt to identify the worst affected countries affected by each cause of fatality. Key point is we have normailzed the numbers to better understand the gravity. Bigger the size of the circle, worst is the impact. </p>
+  </section>
+  <section>
+    <h3>How to use the visualization</h3>
+    <ol type="1">
+      <li>Select the year</li>
+      <li>Proceed by selecting the cause of death</li>
+      <li>Keep shuffling</li>
+    </ol>
+  </section>
+  <section>
+    <div id="scripts">
+      <div id="sliderBlock">
+          <div style="margin-top: 5px; margin-right: -20px;">Year</div>
+          <input id="slide" type="range" class="slider" min="1990" max="2017" step="1" value="1990">
+          <div id="sliderAmount" value="1990" style="margin-left:-25px;margin-top: 5px;"></div>
+      </div>
+    </div>
+  </section>
+  <section class="map_section">
+    <div id="wrapper">
+  		<h3 id="chartTitle">Select cause of death!</h3>
+  		<select id="dataSource">
+        <option selected disabled hidden>Select Cause</option>
+  			<option value="alzheimer">Alzheimer</option>
+        <option value="cardiovascular">Cardiovascular</option>
+  			<option value="drugs">Drugs</option>
+        <option value="nutritional">Nutritional Deficiencies</option>
+  			<option value="fights">Voilence</option>
+        <option value="Tuberculosis">Tuberculosis</option>
+  		</select>
+    </div>
+  </section>
+  <section class="map_section">
+    <div>
+      <script src="sketch.js"></script>
+    </div>
+  </section>
+
+</table>
+
+</body>
+
+</html>
